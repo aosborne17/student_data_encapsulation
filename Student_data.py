@@ -10,11 +10,11 @@ class Student_Data:
     def email(self):
         print("{}{}@spartaglobal.com".format(self.first_name[0], self.last_name))
 
-    # def change_bank_details(self, bank_sort_code):
-    #      self.bank_sort_code = bank_sort_code
+    def change_bank_details(self, bank_sort_code):
+         self.bank_sort_code = bank_sort_code
 
-    def __change_bank_details(self, bank_sort_code):
-        self.bank_sort_code = bank_sort_code
+    # def __change_bank_details(self, bank_sort_code):
+    #     self.bank_sort_code = bank_sort_code
 
 
 """
@@ -25,7 +25,7 @@ Andrew = Student_Data("Andrew", "Osborne", 21, "British/Caribbean", 21_23_46)
 
 # Andrew.email()
 
-# Andrew.change_bank_details(30_44_21)
+Andrew.change_bank_details(30_44_21)
 
 """
 This name mangling allows you to access the private method within the class
